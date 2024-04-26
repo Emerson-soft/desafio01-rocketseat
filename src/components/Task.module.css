@@ -1,0 +1,106 @@
+.task {
+  display: flex;
+  padding: 1rem;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  background: var(--gray-500);
+  color: var(--gray-100);
+  border-radius: 8px;  
+  /* max-width: 39.5rem; */
+}
+
+.content {
+  word-wrap: break-word;
+  /* text-align: start;     */
+}
+
+.contentChecked {
+  text-align: start;   
+  text-decoration: line-through;
+  word-wrap: break-word;
+
+  color: var(--gray-300);
+}
+
+input[type="checkbox"] {
+  display: none; 
+}
+
+.radioIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 2px;
+
+  width: 1.125rem;
+  height: 1.125rem;
+  
+  border: 2px solid var(--blue-500);
+
+  border-radius: 50%;
+  
+  cursor: pointer;
+}
+
+.radioIcon:hover {
+  border: 2px solid var(--blue-600);
+  background-color: var(--blue-600-alfa);
+}
+
+input[type="checkbox"]:checked + .radioIcon:hover {
+  background-color: var(--purple-500);
+}
+
+input[type="checkbox"]:checked + .radioIcon {
+  background-color: var(--purple-600);
+  border: 2px solid var(--purple-600);
+}
+
+input[type="checkbox"] + .radioIcon svg {
+  display: none;
+}
+
+input[type="checkbox"]:checked + .radioIcon svg {
+  display: inline;
+}
+
+
+.task > svg {
+  transition: color 0.1s;
+  color: var(--gray-300);
+}
+
+.btnRemove {
+  width: 1.5rem;
+  height: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--gray-300);  
+  box-sizing: initial;
+
+  cursor: pointer;
+
+  transition: background-color 0.1s, color 0.1s ;
+}
+
+.btnRemove:hover {
+  cursor: pointer;
+
+  width: 1.5rem;
+  height: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--gray-400);    
+  color: var(--red-700);
+  border-radius: 4px;  
+  box-sizing: initial;
+}
+
+
+
+
+
